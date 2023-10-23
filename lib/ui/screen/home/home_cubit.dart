@@ -15,8 +15,8 @@ class HomeCubit extends Cubit<HomeState> {
         listCategories: responseCategories,
       ));
     } catch (e) {
-      print('categories =>>> $e');
       emit(state.copyWith(categoriesStatus: LoadStatus.failure));
+      print('categories =>>> $e');
     }
   }
 }

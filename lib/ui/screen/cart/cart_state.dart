@@ -19,4 +19,6 @@ class CartState extends Equatable {
       listCart: listCart ?? this.listCart,
     );
   }
+
+
 }
